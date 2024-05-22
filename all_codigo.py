@@ -4,12 +4,12 @@ import pyautogui
 import pyperclip
 import time
 
-pyautogui.PAUSE = 0.5
+pyautogui.PAUSE = 0.4
 
 NUMERO_DE_REPETICOES = 999
 
 def funcao_para_repetir():
-    time.sleep(5.0)
+    time.sleep(2.0)
 
     pyautogui.click(clicks=3)  # Seleciona números
     pyautogui.hotkey('ctrl', 'c')
@@ -21,12 +21,12 @@ def funcao_para_repetir():
     time.sleep(2.0)
 
     pyautogui.click(x=1100, y=973)  # Barra de conversa
-    mensagem = '''Olá, tudo bem? Bom início de noite!! 
+    mensagem = '''Olá, tudo bem? Boa noite! 
 
 *JÁ VISITOU UM APARTAMENTO DECORADO?*
 
     Sou o *Rodolfo*, Consultor *SETE 7* pela Imobiliária Abyara. 
-Dedicado em realizar sonhos *há mais de 10 anos* 🙏
+Dedicado em realizar sonhos *há mais de 10 anos!* 🙏
 
 📍Há interesse em adquirir apartamentos na planta, seja do projeto *"Minha Casa, Minha Vida"*, de *Médio* ou *Alto padrão*?
 
@@ -61,4 +61,4 @@ Dedicado em realizar sonhos *há mais de 10 anos* 🙏
     pyautogui.press('enter')
 
 for numero in range(NUMERO_DE_REPETICOES):
-    funcao_para_repetir()
+    funcao_para_repetir
